@@ -18,13 +18,15 @@ img {
 
 :root {
     /* || PRIMARY COLORS */
-    --card1-bg-color: rgb(227, 136, 38);
-    --card2-bg-color: rgb(0, 105, 112);
-    --card3-bg-color: rgb(0, 66, 65);
+    --card1-bg-color: 227, 136, 38;
+    --card2-bg-color: 0, 105, 112;
+    --card3-bg-color: 0, 66, 65;
 
     /* || NEUTRAL COLORS */
     --transparent-white: hsla(0, 0%, 100%, 0.75); /* paragraphs */
     --bg-color: hsl(0, 0%, 95%); /* background, headings, buttons */
+
+    --link-text-opa: 0.75;
 }
 
 body {
@@ -46,16 +48,16 @@ article {
 }
 
 .card1 {
-    background-color: var(--card1-bg-color);
+    background-color: rgb(var(--card1-bg-color));
     border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .card2 {
-    background-color: var(--card2-bg-color);
+    background-color: rgb(var(--card2-bg-color));
 }
 
 .card3 {
-    background-color: var(--card3-bg-color);
+    background-color: rgb(var(--card3-bg-color));
     border-radius: 0 0 0.5rem 0.5rem;
 }
 
@@ -89,21 +91,43 @@ article a {
 }
 
 .card1 a {
-    color: var(--card1-bg-color);
+    color: rgba(var(--card1-bg-color), var(--link-text-opa));
 }
 
 .card2 a {
-    color: var(--card2-bg-color);
+    color: rgb(var(--card2-bg-color), var(--link-text-opa));
 }
 
 .card3 a {
-    color: var(--card3-bg-color);
+    color: rgb(var(--card3-bg-color), var(--link-text-opa));
 }
 
 footer {
-    /* position: absolute;
-    bottom: 0; */
-    /* width: 100%; */
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.75rem;
+}
+
+@media screen and (min-width: 1440px){
+    body {
+        display: grid;
+        place-content: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        max-width: 66%;
+    }
+
+    article p {
+        margin-bottom: 3rem;
+    } 
+
+    .card1 {
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+
+    .card3 {
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
 }
