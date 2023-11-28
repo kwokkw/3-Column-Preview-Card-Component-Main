@@ -36,15 +36,11 @@ body {
 
 main {
     max-width: 90%;
-    margin: 4rem auto;
+    margin: 5rem auto;
 }
 
 article {
     padding: 3rem;
-
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
 }
 
 .card1 {
@@ -63,25 +59,24 @@ img {
     padding-bottom: 1.5rem;
 }
 
-h2 {
+article h2 {
     text-transform: uppercase;
     font-family: "Big Shoulders Display";
-    font-size: larger;
+    font-size: 2.75rem;
     letter-spacing: 0.1rem;
-    color: white;
+    color: hsl(0, 0%, 95%);
     padding-bottom: 1.5rem;
 }
 
-p {
+article p {
     font-family: "Lexend Deca";
     font-size: 0.9rem;
-    font-weight: 100;
     color: var(--transparent-white);
     line-height: 1.5rem;
     padding-bottom: 1.5rem;
 }
 
-a {
+article a {
     background-color: white;
     max-width: 50%;
     padding: 0.5rem 1rem;
@@ -94,5 +89,5 @@ footer {
     bottom: 0; */
     /* width: 100%; */
     text-align: center;
-    font-size: 0.75rem;
+    font-size: 1rem;
 }
