@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca:wght@700&family=Outfit:wght@400;700&display=swap');
 
 /* || RESET */
+/* https://andy-bell.co.uk/a-more-modern-css-reset/ */
 
 * {
     margin: 0;
@@ -34,13 +35,14 @@ body {
     min-height: 100vh;
     font-family: "Lexend Deca";
     font-size: 0.9375rem;
-    /* display: grid;
-    place-content: center; */
+    display: grid;
+    place-content: center;
 }
 
 main {
-    max-width: 90%;
-    margin: 5rem auto ;
+    /* max-width: 90%; */
+    /* margin: 5rem auto ; */
+    margin: 5rem 1rem;
 }
 
 article {
@@ -108,14 +110,14 @@ footer {
 }
 
 @media screen and (min-width: 1440px){
-    body {
+    /* body {
         display: grid;
         place-content: center;
-    }
+    } */
 
     main {
         display: flex;
-        flex-direction: row;
+        margin: 0 auto;
         max-width: 66%;
     }
 
@@ -129,5 +131,21 @@ footer {
 
     .card3 {
         border-radius: 0 0.5rem 0.5rem 0;
+    }
+
+    a:active {
+        color: white;
+        border: 1px solid white;
+    }
+
+    .card1 a:active {
+        background-color: rgb(var(--card1-bg-color));
+    }
+
+    .card2 a:active {
+        background-color: rgb(var(--card2-bg-color));
+    }
+    .card3 a:active {
+        background-color: rgb(var(--card3-bg-color));
     }
 }
