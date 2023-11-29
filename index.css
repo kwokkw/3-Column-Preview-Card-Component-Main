@@ -35,12 +35,8 @@ body {
     font-size: 0.9375rem;
     display: grid;
     place-content: center;
-}
-
-main {
-    /* max-width: 90%; */
-    /* margin: 5rem auto ; */
-    margin: 5rem 1rem;
+    gap: 2rem;
+    padding: 3rem 1rem;
 }
 
 article {
@@ -116,7 +112,7 @@ footer {
     main {
         display: flex;
         margin: 0 auto;
-        max-width: 66%;
+        max-width: 59rem;
     }
 
     article p {
